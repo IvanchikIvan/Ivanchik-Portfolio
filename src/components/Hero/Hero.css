@@ -42,7 +42,7 @@
     font-style: normal;
     font-family: "Syne", "Syne Placeholder", sans-serif;
     color: whitesmoke;
-    font-size: calc(50px + 10 * (100vw / 1280));
+    font-size: calc(30px + 25 * (100vw / 1280));
     letter-spacing: 0em;
     line-height: 1.1;
     text-align: left;
