@@ -31,33 +31,35 @@
   cursor: pointer;
 }
 
-.nav-item a{
+.nav-item a {
   text-decoration: none;
   color: whitesmoke;
   transition: all 0.5s ease;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
   color: #da2c60;
   text-shadow: #da2c60 0px 0px 10px;
 }
 
-.nav-item a::after, .nav-item a::before{
-  color:transparent;
+.nav-item a::after,
+.nav-item a::before {
+  color: transparent;
   transition: all 0.5s linear;
   text-shadow: transparent 0px 0px 10px;
 }
 
-.nav-item a:hover::after, .nav-item a:hover::before{
+.nav-item a:hover::after,
+.nav-item a:hover::before {
   color: #da2c60;
   text-shadow: #da2c60 0px 0px 10px;
 }
 
-.nav-item a::before{
+.nav-item a::before {
   content: "< ";
 }
 
-.nav-item a::after{
+.nav-item a::after {
   content: " />";
 }
 
@@ -68,7 +70,7 @@
 
 .name span {
   transition: all 0.5s;
-  font-size: 1.4rem;
+  font-size: calc(15px + 5 * (100vw / 1280));
 }
 
 .name:hover :nth-child(1) {
@@ -86,3 +88,69 @@
   padding: 10px;
 }
 
+.menu-icon.active .bar:nth-child(1) {
+  transform: translateY(0.8rem) rotate(45deg);
+}
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon.active .bar:nth-child(3) {
+  transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 0 1.5rem;
+    padding: 10px 20px;
+  }
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+  .navbar-left {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.4s;
+    justify-content: center;
+  }
+
+  .navbar.open .navbar-left {
+    display: flex;
+    background-color: transparent;
+    color: whitesmoke;
+    border-radius: 16px;
+    align-self: center;
+  }
+
+  .navbar.open .navbar-left .navbar-left-items {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #1b1e22;
+    color: whitesmoke;
+    border-radius: 16px;
+    align-self: center;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
