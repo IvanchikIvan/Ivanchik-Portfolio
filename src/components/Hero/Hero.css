@@ -8,6 +8,7 @@
     justify-content: center;
     padding: 20% 18%;
     display: flex;
+    font-family: 'Syne', sans-serif;
   }
   
   .columns {
@@ -41,7 +42,7 @@
     position: relative;
     font-weight: 700;
     font-style: normal;
-    font-family: "Syne", "Syne Placeholder", sans-serif;
+    font-family: 'Syne', sans-serif;
     color: whitesmoke;
     font-size: calc(30px + 25 * (100vw / 1280));
     letter-spacing: 0em;
@@ -57,7 +58,7 @@
     position: relative;
     font-weight: 400;
     font-style: normal;
-    font-family: "Figtree", "Figtree Placeholder", sans-serif;
+    font-family: 'Syne', sans-serif;
     color: whitesmoke;
     font-size: 16px;
     letter-spacing: 0em;
@@ -109,6 +110,7 @@
     border-radius: 9999px;
     transition: all 0.2s ease;
     filter: drop-shadow(#23272d 0 0 5px);
+    font-family: 'Syne', sans-serif;
   }
   
   .contact-me:hover{
