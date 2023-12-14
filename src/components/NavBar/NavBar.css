@@ -37,6 +37,30 @@
   transition: all 0.5s ease;
 }
 
+.nav-item a:hover{
+  color: #da2c60;
+  text-shadow: #da2c60 0px 0px 10px;
+}
+
+.nav-item a::after, .nav-item a::before{
+  color:transparent;
+  transition: all 0.5s linear;
+  text-shadow: transparent 0px 0px 10px;
+}
+
+.nav-item a:hover::after, .nav-item a:hover::before{
+  color: #da2c60;
+  text-shadow: #da2c60 0px 0px 10px;
+}
+
+.nav-item a::before{
+  content: "< ";
+}
+
+.nav-item a::after{
+  content: " />";
+}
+
 .navbar-right {
   display: flex;
   align-items: center;
