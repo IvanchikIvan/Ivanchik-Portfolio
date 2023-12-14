@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
+
+* {
+  font-family: "Syne", "Syne Placeholder", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 1.5rem;
+  padding: 2rem 5rem;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left .navbar-left-items {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.2rem;
+}
+
+.nav-item {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.5s ease;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.name span {
+  transition: all 0.5s;
+  font-size: 1.4rem;
+}
+
+.name:hover :nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+.name:hover :nth-child(3) {
+  margin-left: 0.5rem;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
