@@ -43,7 +43,13 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  transition: all 0.3s;
   font-family: "Syne", "Syne Placeholder", sans-serif;
+}
+
+.message:hover {
+  transform: scale(1.05);
+  box-shadow: #1f1e1c 0px 0px 5px 2px;
 }
 
 .message img {
