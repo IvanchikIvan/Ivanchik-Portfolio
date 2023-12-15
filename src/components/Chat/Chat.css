@@ -1,12 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
-
-* {
-  font-family: "Syne", "Syne Placeholder", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .chat {
   display: flex;
   flex-direction: row;
@@ -52,6 +43,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  font-family: "Syne", "Syne Placeholder", sans-serif;
 }
 
 .message img {
