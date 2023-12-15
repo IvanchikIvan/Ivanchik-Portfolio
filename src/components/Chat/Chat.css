@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
+
 * {
   font-family: "Syne", "Syne Placeholder", sans-serif;
   box-sizing: border-box;
@@ -18,11 +20,26 @@
   flex-direction: column;
   flex: 2;
   position: relative;
-  justify-content: center;
-  align-items: center;
 }
 
+.message-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  z-index: -1;
+  border: #f03b7152 solid;
+  border-radius: 50%;
+  transition: all 1s;
+  transform: rotate(-45deg);
+}
+
+
 .message {
+  background-color: #1b1e22;
+  border-radius: 25px 25px 25px 0;
   position: relative;
   margin: 1rem 0;
   width: 50%;
@@ -54,8 +71,8 @@
 
 .message .text h3 {
   margin-bottom: 0.5rem;
-  color:whitesmoke;
-  text-shadow: whitesmoke 0px 0px 5px;
+  color:#da2c60;
+  text-shadow: #da2c60 0px 0px 5px;
   font-size: calc(8px + 4 * (100vw / 1280));
 }
 
