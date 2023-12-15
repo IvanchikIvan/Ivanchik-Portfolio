@@ -18,10 +18,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 35%;
   height: 100%;
   z-index: -1;
-  border: #f03b7152 solid;
+  border: #f03b71d5 solid;
   border-radius: 50%;
   transition: all 1s;
   transform: rotate(-45deg);
