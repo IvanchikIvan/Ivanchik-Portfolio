@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap");
+
+* {
+  font-family: "Syne", "Syne Placeholder", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio {
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolio h2 {
+  margin: 4rem 0;
+  color: whitesmoke;
+  transition: all 0.2s;
+  font-size: 2rem;
+  position: relative;
+  transform: translate(0);
+}
+
+.portfolio h2:hover {
+  transform: translateY(50px);
+  color: transparent;
+}
+
+.portfolio h2:before {
+  content: "Projects";
+  position: absolute;
+  color: #af2929;
+  overflow: hidden;
+  transition: all 0.5s;
+  transform: translateY(0px);
+  opacity: 0;
+}
+.portfolio h2:hover:before {
+  transform: translateY(-50px);
+  opacity: 1;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 210;
+  height: 280;
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+}
+
+.project img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.project h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #da2c60;
+}
+
+.project p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.project a {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+  .project img {
+    order: 2;
+  }
+}
