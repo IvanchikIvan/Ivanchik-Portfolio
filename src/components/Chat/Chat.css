@@ -3,13 +3,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3% 10%;
+  padding: calc(5px + 45 * (100vw / 1080));
 }
 
 .message-list {
   display: flex;
   flex-direction: column;
-  flex: 2;
+  max-width: 70%;
   position: relative;
 }
 
@@ -33,7 +33,6 @@
   border-radius: 25px 25px 25px 0;
   position: relative;
   margin: 1rem 0;
-  width: 50%;
   height: min-content;
   font-size: calc(5px + 8 * (100vw / 1280));
   box-shadow: #1f1e1c 0px 0px 10px 0px;
@@ -92,14 +91,13 @@
 
 
 @media screen and (max-width: 768px) {
-  .message {
-    width: 100%;
+  .message-list {
+    max-width: 100%;
   }
   .chat {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 3% 3%;
+    justify-content: center;
+    align-items: center;
   }
 }

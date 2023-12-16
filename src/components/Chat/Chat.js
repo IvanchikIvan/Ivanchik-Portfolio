@@ -31,7 +31,6 @@ const Chat = () => {
           </div>
         </div>
       </div>
-      <div className="About Me"></div>
     </div>
   );
 };
