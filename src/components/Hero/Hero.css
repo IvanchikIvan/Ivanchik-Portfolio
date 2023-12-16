@@ -6,7 +6,7 @@
   transition: all 0.5s;
   align-items: center;
   justify-content: center;
-  padding: 20% 18%;
+  padding: 100px calc(10px + 200 * (100vw / 1080));
   display: flex;
   font-family: "Syne", sans-serif;
 }
@@ -44,7 +44,7 @@
   font-style: normal;
   font-family: "Syne", sans-serif;
   color: whitesmoke;
-  font-size: calc(30px + 25 * (100vw / 1280));
+  font-size: calc(20px + 25 * (100vw / 1280));
   letter-spacing: 0em;
   line-height: 1.1;
   text-align: left;
