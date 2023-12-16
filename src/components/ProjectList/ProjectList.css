@@ -31,12 +31,20 @@
   margin: 10px;
   border-radius: 10px;
   border: #da2c60cb solid;
+  box-shadow: 0 0 7px #ee3069, inset 0 0 7px #ee3069;
 }
 
 .project img {
   width: 100%;
   object-fit: cover;
   border-radius: 6px;
+  box-shadow: 0 0 5px whitesmoke;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.project img:hover {
+    transform: scale(1.05);
 }
 
 .project-info {
