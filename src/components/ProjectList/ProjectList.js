@@ -1,27 +1,21 @@
 import React from "react";
 import "./ProjectList.css";
-import chess from "../Assets/chess-icon.svg";
+import standswiki from "../Assets/standswiki.png";
 import gist_site_icon from '../Assets/gift-site.png'
 
 const projects = [
   {
-    title: "Chess",
+    title: "Site-Gift for girlfriend",
     description:
-      "A small project for learning TypeScript. The functionality of the chess game is implemented, a window with eaten pieces and a window of logs of pieces movements",
-    image: chess,
+      "",
+    image: gist_site_icon,
     link: "https://example.com/project1",
   },
   {
     title: "Stands Wiki",
-    description: "Stands Wiki is my crazy project ",
-    image: gist_site_icon,
+    description: "",
+    image: standswiki,
     link: "https://example.com/project2",
-  },
-  {
-    title: "Личный блог",
-    description: "Разработка личного блога с использованием Node.js и Express.",
-    image: "project3.jpg",
-    link: "https://example.com/project3",
   },
 ];
 

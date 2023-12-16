@@ -19,29 +19,10 @@
   transform: translate(0);
 }
 
-.portfolio h2:hover {
-  transform: translateY(50px);
-  color: transparent;
-}
-
-.portfolio h2:before {
-  content: "Projects";
-  position: absolute;
-  color: #af2929;
-  overflow: hidden;
-  transition: all 0.5s;
-  transform: translateY(0px);
-  opacity: 0;
-}
-.portfolio h2:hover:before {
-  transform: translateY(-50px);
-  opacity: 1;
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .project {
@@ -61,7 +42,7 @@
 .project-info {
   padding: 20px;
   color: whitesmoke;
-  text-align: left;
+  text-align: center;
 }
 
 .project h3 {
