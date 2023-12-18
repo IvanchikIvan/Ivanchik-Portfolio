@@ -80,6 +80,15 @@
   cursor: pointer;
 }
 
+.im-glad-to-answer-your-questions-image__container {
+  width: 130px;
+  height: 130px;
+}
+.im-glad-to-answer-your-questions__image {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;

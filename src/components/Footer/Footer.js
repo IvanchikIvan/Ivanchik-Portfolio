@@ -1,10 +1,14 @@
 import React from "react";
 import "./Footer.css";
+import hello from "../Assets/hello.gif";
 
 const Footer = () => {
   return (
     <footer className="footer" id="footer">
       <div className="im-glad-to-answer-your-questions">
+        <div className="im-glad-to-answer-your-questions-image__container">
+          <img src={hello} className="im-glad-to-answer-your-questions__image"></img>
+        </div>
         <p>E-mail me, I'm always in touch!</p>
         <p className="made-by-Ivanchik">© 2023 — Made by Ivanchik</p>
       </div>
