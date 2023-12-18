@@ -24,7 +24,7 @@
 .im-glad-to-answer-your-questions p {
   font-size: calc(30px + 12 * (100vw / 1280));
   text-align: left;
-  color: #131313;
+  color: #fff;
   margin: 1rem;
 }
 
