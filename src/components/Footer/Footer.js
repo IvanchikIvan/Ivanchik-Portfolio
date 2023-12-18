@@ -4,6 +4,10 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer" id="footer">
+      <div className="im-glad-to-answer-your-questions">
+        <p>E-mail me, I'm always in touch!</p>
+        <p className="made-by-Ivanchik">© 2023 — Made by Ivanchik</p>
+      </div>
       <div className="contact-me-form-container">
         <form onSubmit={null} className="contact-me-form">
           <input
