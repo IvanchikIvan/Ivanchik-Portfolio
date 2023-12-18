@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: "development",
@@ -14,7 +15,7 @@ module.exports = {
   },
   devServer: {
     static: path.resolve(__dirname, "dist"),
-    port: 8080,
+    port: 6969,
     hot: true,
   },
   plugins: [
@@ -23,6 +24,14 @@ module.exports = {
       template: "./public/index.html",
       filename: "index.html",
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'public/favicon.ico',
+          to: 'favicon.ico' 
+        }
+      ]
+    })
   ],
   module: {
     rules: [
@@ -47,7 +56,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "images/",
+              outputPath: "Assets/",
             },
           },
         ],
