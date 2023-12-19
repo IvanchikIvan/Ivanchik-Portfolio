@@ -5,25 +5,25 @@ import icon from "../Assets/chat-avatar.jpg";
 const Chat = () => {
   return (
     <div className="chat" id="chat">
-      <div className="message-list">
-        <div className="message">
-          <div className="logo">
-            <img src={icon} alt=""></img>
+      <div className="chat__message-list">
+        <div className="chat__message">
+          <div className="chat__logo">
+            <img src={icon} alt="" />
           </div>
-          <div className="text">
-            <h3>&lt; Ivanchik /&gt;</h3>
+          <div className="chat__text">
+            <h3 className="chat__author">&lt; Ivanchik /&gt;</h3>
             <p>
-              I`m 16 years old, I`ve been putting me soul into a world of
-              web-development for two whole years now
+              I'm 16 years old, I've been putting my soul into the world of
+              web-development for two whole years now.
             </p>
           </div>
         </div>
-        <div className="message">
-          <div className="logo">
-            <img src={icon} alt=""></img>
+        <div className="chat__message">
+          <div className="chat__logo">
+            <img src={icon} alt="" />
           </div>
-          <div className="text">
-            <h3>&lt; Ivanchik /&gt;</h3>
+          <div className="chat__text">
+            <h3 className="chat__author">&lt; Ivanchik /&gt;</h3>
             <p>
               I spent the first year learning to code with my friend, ready to
               explore the world of code further! 💻🚀
