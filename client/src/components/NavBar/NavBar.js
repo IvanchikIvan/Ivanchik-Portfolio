@@ -9,17 +9,17 @@ const NavBar = () => {
   };
 
   return (
-    <div className={`navbar ${isMenuOpen ? "open" : ""}`}>
-      <div className="navbar-top">
+    <div className={`navbar ${isMenuOpen ? "navbar--open" : ""}`}>
+      <div className="navbar__top">
         <div
-          className={isMenuOpen ? "menu-icon active" : "menu-icon"}
+          className={isMenuOpen ? "menu-icon menu-icon--active" : "menu-icon"}
           onClick={toggleMenu}
         >
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
-        <div className="navbar-right">
+        <div className="navbar__right">
           <div className="name">
             <span>&lt; </span>
             <span>Ivanchik</span>
@@ -27,8 +27,8 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className="navbar-left">
-        <div className="navbar-left-items">
+      <div className="navbar__left">
+        <div className="navbar__left-items">
           <div className="nav-item"><a href="#chat">About me</a></div>
           <div className="nav-item"><a href="#footer">Contact</a></div>
           <div className="nav-item"><a href="#projects">Projects</a></div>
