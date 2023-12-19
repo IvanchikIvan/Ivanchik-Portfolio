@@ -1,16 +1,10 @@
-* {
-  font-family: "Syne", "Syne Placeholder", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .portfolio {
   text-align: center;
   padding: 20px;
+  font-family: "Syne", "Syne Placeholder", sans-serif;
 }
 
-.portfolio h2 {
+.portfolio__title {
   margin: 4rem 0;
   color: whitesmoke;
   transition: all 0.2s;
@@ -34,7 +28,7 @@
   box-shadow: 0 0 7px #ee3069, inset 0 0 7px #ee3069;
 }
 
-.project img {
+.project__image {
   width: 100%;
   object-fit: cover;
   border-radius: 6px;
@@ -43,28 +37,28 @@
   cursor: pointer;
 }
 
-.project img:hover {
-    transform: scale(1.05);
+.project__image:hover {
+  transform: scale(1.05);
 }
 
-.project-info {
+.project__info {
   padding: 20px;
   color: whitesmoke;
   text-align: center;
 }
 
-.project h3 {
+.project__title {
   margin-top: 10px;
   font-size: 1.2rem;
   color: #da2c60;
 }
 
-.project p {
+.project__description {
   margin-top: 10px;
   font-size: 1rem;
 }
 
-.project a {
+.project__link {
   display: block;
   background-color: #007bff;
   color: #fff;
@@ -74,7 +68,7 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.project a:hover {
+.project__link:hover {
   background-color: #0056b3;
 }
 
@@ -82,7 +76,7 @@
   .projects {
     flex-direction: column;
   }
-  .project img {
+  .project__image {
     order: 2;
   }
 }

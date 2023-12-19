@@ -38,14 +38,14 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio" id="projects">
-      <h2>Projects</h2>
+      <h2 className="portfolio__title">Projects</h2>
       <div className="projects">
         {projects.map((project, index) => (
           <animated.div className="project" key={index} style={projectStyles} ref={projectRef}>
-            <img src={project.image} alt={project.title} />
-            <div className="project-info">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+            <img className="project__image" src={project.image} alt={project.title} />
+            <div className="project__info">
+              <h3 className="project__title">{project.title}</h3>
+              <p className="project__description">{project.description}</p>
             </div>
           </animated.div>
         ))}
