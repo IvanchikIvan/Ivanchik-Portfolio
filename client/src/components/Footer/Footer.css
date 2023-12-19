@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: row;
   width: 100%;
+  font-family: "Syne", "Syne Placeholder", sans-serif;
   position: relative;
 }
 
@@ -55,12 +56,23 @@
   align-items: center;
 }
 
+.contact-me-form textarea {
+  padding: 10px;
+  width: 75%;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Syne", "Syne Placeholder", sans-serif;
+  resize: vertical;
+}
+
 .contact-me-form input {
   width: 75%;
   padding: 10px;
   margin: 0.5rem 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: "Syne", "Syne Placeholder", sans-serif;
 }
 
 .contact-me-form input[type="text"],
