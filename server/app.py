@@ -2,15 +2,15 @@ from flask import Flask, request, jsonify
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
-smtp_server = 'smtp.gmail.com'  
-smtp_port = 587  
-smtp_username = 'fromwebsite871@gmail.com'  
-smtp_password = 'xivn lcif vnoj advi' 
-
-
+smtp_server = 'smtp.gmail.com'
+smtp_port = 587
+smtp_username = 'fromwebsite871@gmail.com'
+smtp_password = 'xivn lcif vnoj advi'
 
 @app.route('/api/send-data', methods=['POST'])
 def receive_data():
