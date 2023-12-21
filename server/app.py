@@ -3,14 +3,18 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from flask_cors import CORS
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
 
-smtp_server = 'smtp.gmail.com'
-smtp_port = 587
-smtp_username = 'fromwebsite871@gmail.com'
-smtp_password = 'xivn lcif vnoj advi'
+smtp_server = os.getenv('SMTP_SERVER')
+smtp_port = int(os.getenv('SMTP_PORT'))
+smtp_username = os.getenv('SMTP_USERNAME')
+smtp_password = os.getenv('SMTP_PASSWORD')
 
 @app.route('/api/send-data', methods=['POST'])
 def receive_data():
