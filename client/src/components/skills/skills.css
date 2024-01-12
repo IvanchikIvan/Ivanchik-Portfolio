@@ -1,12 +1,12 @@
 .skills-block {
   background: #1a1d22;
-  padding: calc(10px + 15 * (100vw / 1280));
+  padding: calc(20px + 55 * (100vw / 1280));
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap:30px;
+  gap:calc(10px + 20 * (100vw / 1280));
   font-family: "Syne", "Syne Placeholder", sans-serif;
 }
 
@@ -17,9 +17,9 @@
 .skills__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap:15px;
+    gap:calc(10px + 15 * (100vw / 1280));
     flex-wrap: wrap;
     width: 100%;
 }
@@ -34,9 +34,10 @@
 
 .item-title {
   margin-bottom: 5px;
+  font-size: calc(5px + 10 * (100vw / 1280));
 }
 
 .item-icon {
-  width: 70px;
-  height: 70px;
+  width: 86px;
+  height: 86px;
 }
