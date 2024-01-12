@@ -17,6 +17,12 @@ const projects = [
     image: standswiki,
     link: "https://example.com/project2",
   },
+  {
+    title: "ToDo List",
+    description: "",
+    image: standswiki,
+    link: "https://example.com/project2",
+  },
 ];
 
 const Portfolio = () => {
