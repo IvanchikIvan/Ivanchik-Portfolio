@@ -20,6 +20,7 @@
     justify-content: space-around;
     align-items: center;
     gap:15px;
+    flex-wrap: wrap;
     width: 100%;
 }
 
