@@ -5,6 +5,13 @@
 }
 
 body {
-  background-color: #23272d;
   overflow-x: hidden;
+}
+
+html[data-theme="dark"] body {
+  background-color: #23272d;
+}
+
+html[data-theme="light"] body {
+  background-color: #fdfdfd;
 }

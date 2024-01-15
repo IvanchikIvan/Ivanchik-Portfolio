@@ -1,3 +1,36 @@
+:root {
+  --text-color-dark: whitesmoke;
+  --text-color-light: #2e2e2e;
+  --border-grid__item-color-dark: #ccc;
+  --border-grid__item-color-light: #131313;
+  --bg-grid-item_4-dark: #3c4a5e;
+  --bg-grid-item_4-light: #b5c4e2;
+  --bg-grid-item_2-dark: #4a505c;
+  --bg-grid-item_2-light: #85a6d3;
+  --bg-grid-item_7-dark: aliceblue;
+  --bg-grid-item_7-light: #3c4a5e;
+  --bg-grid-item_5-dark: white;
+  --bg-grid-item_5-light: #1b1b44;
+}
+
+[data-theme="light"] {
+  --text-color: var(--text-color-light);
+  --border-grid__item-color: var(--border-grid__item-color-light);
+  --bg-grid-item_4: var(--bg-grid-item_4-light);
+  --bg-grid-item_2: var(--bg-grid-item_2-light);
+  --bg-grid-item_7: var(--bg-grid-item_7-light);
+  --bg-grid-item_5: var(--bg-grid-item_5-light);
+}
+
+[data-theme="dark"] {
+  --text-color: var(--text-color-dark);
+  --border-grid__item-color: var(--border-grid__item-color-dark);
+  --bg-grid-item_4: var(--bg-grid-item_4-dark);
+  --bg-grid-item_2: var(--bg-grid-item_2-dark);
+  --bg-grid-item_7: var(--bg-grid-item_7-dark);
+  --bg-grid-item_5: var(--bg-grid-item_5-dark);
+}
+
 .hero {
   height: 70vh;
   width: 100%;
@@ -41,7 +74,7 @@
   position: relative;
   font-weight: 700;
   font-style: normal;
-  color: whitesmoke;
+  color: var(--text-color);
   font-size: calc(20px + 25 * (100vw / 1280));
   letter-spacing: 0em;
   line-height: 1.1;
@@ -56,7 +89,7 @@
   position: relative;
   font-weight: 400;
   font-style: normal;
-  color: whitesmoke;
+  color: var(--text-color);
   font-size: 16px;
   letter-spacing: 0em;
   line-height: 1.2;
@@ -86,8 +119,8 @@
 }
 
 .hero__frontend-developer:hover {
-  border: 1px solid whitesmoke;
-  box-shadow: 0 0 5px whitesmoke, inset 0 0 5px whitesmoke;
+  border: 1px solid var(--text-color);
+  box-shadow: 0 0 5px var(--text-color), inset 0 0 5px var(--text-color);
 }
 
 .hero__frontend-developer p {
@@ -140,7 +173,7 @@
   text-align: center;
   padding: 20px;
   font-size: 24px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-grid__item-color);
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
@@ -154,19 +187,19 @@
 }
 
 .hero__grid :nth-child(1) {
-  background-color: white;
+  background-color: var(--bg-grid-item_5);
   border-radius: 200px 200px 0px 0px;
   transition: all 0.8s;
 }
 
 .hero__grid :nth-child(1):hover {
-  background-color: white;
+  background-color: var(--bg-grid-item_5);
   transform: rotate(0);
   border-radius: 0px 0px 200px 200px;
 }
 
 .hero__grid :nth-child(2) {
-  background-color: #4a505c;
+  background-color: var(--bg-grid-item_2);
   border-radius: 200px 200px 200px 0px;
 }
 
@@ -175,7 +208,7 @@
 }
 
 .hero__grid :nth-child(4) {
-  background-color: #3c4a5e;
+  background-color: var(--bg-grid-item_4);
   border-radius: 10px;
 }
 
@@ -186,24 +219,22 @@
 }
 
 .hero__grid :nth-child(5) {
-  background-color: white;
+  background-color: var(--bg-grid-item_5);
   border-radius: 0px 0px 200px 0px;
   transition: all 0.4s;
 }
 
 .hero__grid :nth-child(5):hover {
-  background-color: white;
   border-radius: 200px 0px 0px 0px;
   transform: rotate(0);
 }
 
 .hero__grid :nth-child(6) {
-  background-color: aliceblue;
+  background-color: var(--bg-grid-item_7);
   border-radius: 100%;
 }
 
 .hero__grid :nth-child(6):hover {
-  background-color: aliceblue;
   border-radius: 100% 10px 10px 10px;
   transform: rotate(0);
 }
