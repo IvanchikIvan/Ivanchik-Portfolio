@@ -1,3 +1,21 @@
+:root {
+  --text-color-dark: whitesmoke;
+  --text-color-light: #2e2e2e;
+  --bg-project-dark:#1b1d22;
+  --bg-project-light:#f1f1f1;
+
+}
+
+[data-theme="light"] {
+  --text-color: var(--text-color-light);
+  --bg-project:var(--bg-project-light);
+}
+
+[data-theme="dark"] {
+  --text-color: var(--text-color-dark);
+  --bg-project:var(--bg-project-dark);
+}
+
 .portfolio {
   text-align: center;
   padding: 20px;
@@ -6,7 +24,7 @@
 
 .portfolio__title {
   margin: 4rem 0;
-  color: whitesmoke;
+  color: var(--text-color);
   transition: all 0.2s;
   font-size: 2rem;
   position: relative;
@@ -27,6 +45,7 @@
   border-radius: 10px;
   border: #da2c60cb solid;
   box-shadow: 0 0 7px #ee3069, inset 0 0 7px #ee3069;
+  background: var(--bg-project);
 }
 
 .project__image {
