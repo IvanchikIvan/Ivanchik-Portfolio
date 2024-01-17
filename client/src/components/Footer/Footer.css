@@ -1,5 +1,19 @@
+:root {
+  --bg-footer-dark:#da2c60;
+  --bg-footer-light:#f02d67;
+
+}
+
+[data-theme="light"] {
+  --bg-footer:var(--bg-footer-light);
+}
+
+[data-theme="dark"] {
+  --bg-footer:var(--bg-footer-dark);
+}
+
 .footer {
-  background-color: #da2c60;
+  background-color: var(--bg-footer);
   color: #fff;
   padding: calc(20px + 12 * (100vw / 1280)) 0;
   display: flex;
