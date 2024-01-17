@@ -1,5 +1,23 @@
+:root {
+  --text-color-dark: whitesmoke;
+  --text-color-light: #2e2e2e;
+  --bg-color-dark:#1a1d22;
+  --bg-color-light:#f1f1f1;
+
+}
+
+[data-theme="light"] {
+  --text-color: var(--text-color-light);
+  --bg-color:var(--bg-color-light);
+}
+
+[data-theme="dark"] {
+  --text-color: var(--text-color-dark);
+  --bg-color:var(--bg-color-dark);
+}
+
 .skills-block {
-  background: #1a1d22;
+  background: var(--bg-color);
   padding: calc(20px + 55 * (100vw / 1280));
   text-align: center;
   display: flex;
@@ -11,7 +29,7 @@
 }
 
 .block-title {
-  color: whitesmoke;
+  color: var(--text-color);
 }
 
 .skills__container {
@@ -29,7 +47,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
-  color: whitesmoke;
+  color: var(--text-color);
 }
 
 .item-title {
