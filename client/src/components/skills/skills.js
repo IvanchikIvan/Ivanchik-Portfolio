@@ -7,6 +7,7 @@ import js from "../Assets/js-svgrepo-com.svg";
 import react from "../Assets/react-svgrepo-com.svg";
 import ts from "../Assets/typescript-icon-svgrepo-com.svg";
 import git from "../Assets/git-svgrepo-com.svg";
+import webpack from "../Assets/webpack.svg";
 
 const SkillsBlock = () => {
   return (
@@ -40,6 +41,10 @@ const SkillsBlock = () => {
         <div className="skills-item">
           <h3 className="item-title">Git</h3>
           <img src={git} alt="Icon" className="item-icon" />
+        </div>
+        <div className="skills-item">
+          <h3 className="item-title">WebPack</h3>
+          <img src={webpack} alt="Icon" className="item-icon" />
         </div>
       </div>
     </div>
