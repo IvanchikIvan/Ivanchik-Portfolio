@@ -4,14 +4,15 @@ const ThemeProvider = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const html = document.querySelector("html");
   const toggleTheme = () => {
-    setIsDarkTheme((prevTheme) => !prevTheme);
+    setIsDarkTheme(!isDarkTheme);
+    console.log(isDarkTheme)
     html.setAttribute('data-theme', (isDarkTheme ? "dark" : "light"))
   };
 
   return (
     <div>
       <button onClick={toggleTheme}>
-        {isDarkTheme ? "Switch to Light Theme" : "Switch to Dark Theme"}
+        {isDarkTheme ? "Switch to Dark Theme" : "Switch to Light Theme"}
       </button>
     </div>
   );
