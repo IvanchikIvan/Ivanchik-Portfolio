@@ -33,9 +33,7 @@ const NavBar = () => {
           <div className="nav-item"><a href="#chat">About me</a></div>
           <div className="nav-item"><a href="#footer">Contact</a></div>
           <div className="nav-item"><a href="#projects">Projects</a></div>
-          <div className="theme-btn">
-            <ThemeProvider/>
-          </div>
+          <ThemeProvider/>
         </div>
       </div>
     </div>
