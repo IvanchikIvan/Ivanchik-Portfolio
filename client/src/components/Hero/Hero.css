@@ -32,14 +32,15 @@
 }
 
 .hero {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   transition: all 0.5s;
   align-items: center;
-  justify-content: center;
-  padding: 100px calc(10px + 200 * (100vw / 1080));
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px calc(10px + 150 * (100vw / 1080));
   font-family: "Syne", sans-serif;
 }
 
