@@ -2,6 +2,7 @@ import React from "react";
 import "./ProjectList.css";
 import standswiki from "../Assets/standswiki.png";
 import gist_site_icon from "../Assets/gift-site.png";
+import snippets from "../Assets/snippets.png";
 import { animated, useInView } from "react-spring";
 
 const projects = [
@@ -9,7 +10,7 @@ const projects = [
     title: "Site-Gift for girlfriend",
     description: "",
     image: gist_site_icon,
-    link: "https://example.com/project1",
+    link: "https://github.com/Kavalskiy/FriendShip-History-site",
   },
   {
     title: "Stands Wiki",
@@ -18,10 +19,10 @@ const projects = [
     link: "https://example.com/project2",
   },
   {
-    title: "ToDo List",
-    description: "",
-    image: standswiki,
-    link: "https://example.com/project2",
+    title: "",
+    description: "Snippets",
+    image: snippets,
+    link: "https://github.com/Kavalskiy/snippets",
   },
 ];
 
@@ -48,7 +49,7 @@ const Portfolio = () => {
       <div className="projects">
         {projects.map((project, index) => (
           <animated.div className="project" key={index} style={projectStyles} ref={projectRef}>
-            <img className="project__image" src={project.image} alt={project.title} />
+            <a href={project.link}><img className="project__image" src={project.image} alt={project.title} /></a>
             <div className="project__info">
               <h3 className="project__title">{project.title}</h3>
               <p className="project__description">{project.description}</p>
