@@ -3,6 +3,7 @@ import "./ProjectList.css";
 import standswiki from "../Assets/standswiki.png";
 import gist_site_icon from "../Assets/gift-site.png";
 import snippets from "../Assets/snippets.png";
+import voting_site from "../Assets/voting-site.png";
 import { animated, useInView } from "react-spring";
 
 const projects = [
@@ -19,10 +20,16 @@ const projects = [
     link: "https://example.com/project2",
   },
   {
-    title: "",
-    description: "Snippets",
+    title: "Snippets",
+    description: "",
     image: snippets,
     link: "https://github.com/Kavalskiy/snippets",
+  },
+  {
+    title: "Voting Site",
+    description: "",
+    image: voting_site,
+    link: "https://github.com/Kavalskiy/voting-site",
   },
 ];
 
@@ -39,7 +46,7 @@ const Portfolio = () => {
       },
     }),
     {
-      rootMargin: "-20% 0%",
+      rootMargin: "95% 00%",
     }
   );
 
